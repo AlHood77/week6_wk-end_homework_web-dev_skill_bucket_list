@@ -117,7 +117,29 @@ body {
 
 
 .btn {
-    width: 50px;
+    width: 80px;
     height: 30px;
     border-radius: 20px;
+    outline: none;
+}
+
+.btn-create {
+    background-color: rgba(126, 221, 228, 0.8);
+    color: rgb(101, 108, 109);
+}
+
+.btn-delete {
+    background-color: rgba(233, 112, 13, 0.8);
+    color: rgb(101, 108, 109);
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 8px rgba(0,0,0,.3);
 }
