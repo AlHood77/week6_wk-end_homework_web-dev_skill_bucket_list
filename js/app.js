@@ -13,7 +13,7 @@ form.addEventListener('submit', () => {
     const newSkillItem = document.createElement('li')
     newSkillItem.classList.add('skill-list-item')
 
-    const skill = document.createElement('h2')
+    const skill = document.createElement('h3')
     skill.textContent = `${event.target.skill.value}`
     newSkillItem.appendChild(skill);
     skillList.appendChild(newSkillItem)
@@ -23,7 +23,7 @@ form.addEventListener('submit', () => {
     newSkillItem.appendChild(reason);
     skillList.appendChild(newSkillItem)
 
-    const deadline = document.createElement('h3')
+    const deadline = document.createElement('h4')
     deadline.textContent = `Deadline Set: ${event.target.date.value}`
     newSkillItem.appendChild(deadline);
     skillList.appendChild(newSkillItem)
