@@ -10,25 +10,29 @@
 
 <body>
     
-    <form id="to-do-list-form">
+    <form id="skill-list-form">
         <div id="form-wrapper">          
             <div class="form-item">
-                <label for="title" class="primary">Skill</label>
-                <input type="text" id="title" required/>
+                <label for="skill" class="primary">Skill</label>
+                <input type="text" id="skill" required/>
             </div>
             <div class="form-item">
-                <label for="title" class="primary">Why?</label>
-                <input type="text" id="title" required/>
+                <label for="reason" class="primary">Why?</label>
+                <input type="text" id="reason" />
             </div>
             <div class="form-item">
                 <label for="date" class="primary">Deadline</label>
-                <input type="date" id="date" required/>
+                <input type="date" id="date" />
             </div>
         </div>
         <input type="submit" value="save">
+        <div class="delete-btn">
+            <input type="submit" value="Add" class="button"/>
+            <button id="delete-all" type="button" class="button">Delete All</button>
+          </div>
     </form>
 
-    <h1>Skills I want to learn</h1>
+    <h1>My Web Development Bucket List</h1>
 
     <ul id="skill-list"></ul>
 
