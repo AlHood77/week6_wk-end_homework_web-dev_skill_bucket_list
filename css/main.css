@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    height: 20vh;
+    height: 25vh;
     background-image: linear-gradient(
         to right bottom,
       rgba(126, 221, 228, 0.8),
@@ -102,6 +102,7 @@ body {
 
 .form-item {
     padding: 10px;
+    border:  #777;
    
 }
 
@@ -121,6 +122,7 @@ body {
     height: 30px;
     border-radius: 20px;
     outline: none;
+    border: #777;
 }
 
 .btn-create {
@@ -136,10 +138,25 @@ body {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,.5);
 }
 
 .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 10px 8px rgba(0,0,0,.3);
+}
+
+.skill-list-item {
+    display: block;
+    border: #777 solid;
+    border-width: 1px;
+    list-style-type: none;
+    background-color: rgba(126, 221, 228, 0.8);
+    margin-bottom: 5px;
+    
+    
+}
+
+#deleteItem {
+    cursor: pointer;
 }

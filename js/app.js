@@ -12,6 +12,22 @@ form.addEventListener('submit', () => {
     
     const newSkillItem = document.createElement('li')
     newSkillItem.classList.add('skill-list-item')
+    const spanDelete = document.createElement("span");
+    spanDelete.innerHTML = "&times;";
+    spanDelete.setAttribute("id", "deleteItem")
+    newSkillItem.appendChild(spanDelete);
+    skillList.appendChild(newSkillItem)
+
+    // const deleteItem = document.querySelector('#deleteItem');
+    // deleteItem.addEventListener('click', () => {newSkillItem.parentElement.remove()})
+    const deleteItem = document.querySelector('#deleteItem');
+    deleteItem.addEventListener('click', () => {
+        const listItem = this.parentNode;
+        const ul = listItem.parentNode;
+
+        ul.removeChild(listItem)
+    })
+   
 
     const skill = document.createElement('h3')
     skill.textContent = `${event.target.skill.value}`
@@ -27,15 +43,22 @@ form.addEventListener('submit', () => {
     deadline.textContent = `Deadline Set: ${event.target.date.value}`
     newSkillItem.appendChild(deadline);
     skillList.appendChild(newSkillItem)
+    
+    
+   
 
     form.reset();
 });
+
+
+
+
     
     
     const deleteAll = document.querySelector('#delete-all');
     deleteAll.addEventListener('click', () => {skillList.textContent = ''})
 
-
+ 
     
 
 
