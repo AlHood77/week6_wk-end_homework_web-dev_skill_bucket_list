@@ -11,13 +11,14 @@ body {
     line-height: 1.7;
     color: #777;
     padding: 30px;
+    background-color: #D4E4F7;
 }
 
 .header {
     height: 25vh;
     background-image: linear-gradient(
         to right bottom,
-      rgba(126, 221, 228, 0.8),
+      rgba(52, 123, 152, 0.8),
       rgba(96, 199, 202, 0.8)),
         url(../img/header.jpg);
         background-position: center;
@@ -38,6 +39,7 @@ body {
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+    
 
 }
 
@@ -46,7 +48,7 @@ body {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 5px;
-
+   
     animation: moveInLeft 2s ease-in-out;
     
 }
@@ -113,6 +115,40 @@ body {
 .form-item-text input {
     width: 75vw;
     height: 40px;
+    background-color: #6FC1CB;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 3px;;
+}
+
+.form-item-text input:hover {
+    background-color: #3B7D8E;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+
+  .form-item-date {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .form-item-date input {
+    height: 40px;
+    background-color: #6FC1CB;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.form-item-date input:hover {
+    background-color: #3B7D8E;
 }
 
 
@@ -126,13 +162,13 @@ body {
 }
 
 .btn-create {
-    background-color: rgba(126, 221, 228, 0.8);
-    color: rgb(101, 108, 109);
+    background-color: rgba(52, 123, 152, 0.9);
+    color: #fff;
 }
 
 .btn-delete {
-    background-color: rgba(233, 112, 13, 0.8);
-    color: rgb(101, 108, 109);
+    background-color: rgba(212, 146, 73, 0.9);
+    color: #fff;
 }
 
 
@@ -151,10 +187,13 @@ body {
     border: #777 solid;
     border-width: 1px;
     list-style-type: none;
-    background-color: rgba(126, 221, 228, 0.8);
-    margin-bottom: 5px;
-    
-    
+    background-image: linear-gradient(
+        to right bottom,
+      rgba(52, 123, 152, 0.8),
+      rgba(96, 199, 202, 0.8));
+    margin-bottom: 15px;
+    color: #fff;
+    box-shadow: 1px 1px 2px 4px rgba(70, 65, 65, 0.4);  
 }
 
 #deleteItem {
