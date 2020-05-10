@@ -183,7 +183,8 @@ body {
 }
 
 .skill-list-item {
-    display: block;
+    /* display: block; */
+    position: relative;
     border: #777 solid;
     border-width: 1px;
     list-style-type: none;
@@ -194,8 +195,32 @@ body {
     margin-bottom: 15px;
     color: #fff;
     box-shadow: 1px 1px 2px 4px rgba(70, 65, 65, 0.4);  
+    width: 100%;
+    padding: 0rem 0.5rem;
+    
 }
 
-#deleteItem {
+/* #deleteItem {
     cursor: pointer;
+} */
+
+.skill-completed-checkbox {
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
+    right: 5%;
+   
+}
+
+.deleted-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.completed {
+    background-color: red;
 }
